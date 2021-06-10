@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Syne', sans-serif;
-    margin: 0 150px 0 150px;
+    margin: 0 10% 0 10%;
     background-color: white;
     color: #232323;
   }
@@ -24,7 +24,7 @@ body {
         width: 1000px;
         height: 80px;
         top: 580px;
-        left: 1330px;
+        right: -440px;
         display: inline-flex;
     }
 
@@ -49,12 +49,12 @@ body {
 
 
 .hero {
-    width: 1620px;
+    width: 80%;
     height: 1080px;
 
     h1 {
         font-weight: 800;
-        font-size: 120px;
+        font-size: 60px;
         position: relative;
         top: 400px;
         margin: 0;
@@ -65,7 +65,7 @@ body {
 .mapstyle {
     margin-top: 300px;
     padding-top: 300px;
-    width: 1620px;
+    width: 90%;
     height: 675px;
     position: relative;
 }
@@ -125,8 +125,9 @@ body {
 
 .about {
     margin-top: 400px;
-    padding-top: 300px;
-    width: 1620px;
+    padding-top: 30%;
+    padding-bottom: 400px;
+    width: 80%;
     height: 600px;
 
     .text {
@@ -135,173 +136,261 @@ body {
 
     h2 {
         font-weight: 800;
-        font-size: 120px;
+        font-size: 60px;
         margin: 0;
         padding: 0;
     }
 
     p {
-        columns: 2;
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        columns: 1;
         line-height: 25px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         margin: 0;
         padding: 0;
-        width: 850px;
-        height: 200px;
     }
 } 
 
-/**.gallery {
-    padding-top: 300px;
-    width: 1620px;
-    height: 540px;
-    .image {
-        display: inline-block;
-    }
-}
-**/
-
-.container
-{
-    padding-top: 350px;
-	width: 100%;
-	height: 100%;
-}
-.trans
-{
-	transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-webkit-transition: all 1s ease;
-}
-.top
-{
-	display: flex;
-	width: 80vw;
-	height: 80vh;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-.top ul
-{
-	list-style: none;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	box-sizing: border-box;
-}
-.top ul li
-{
-	position: relative;
-	float: left;
-	width: 25%;
-	height: 25%;
-	overflow: hidden;
+/* The work below, CSSBox, is released under the Creative Commons
+   Attribution-ShareAlike 4.0 license and is available on
+   https://github.com/TheLastProject/CSSBox. You are not required to add
+   additional credit to your website, just leave the above text in this file */
+ 
+   .container {
+    padding-top: 70px;   
+    padding-left: 1%;
+    padding-bottom: 150px;
+   }
+   div.cssbox {
+    display: inline-block;
+  }
+  
+.cssbox_thumb {
+    width: 70vw;
+    height: auto;
 }
 
-.top ul li::before
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #000;
-	content: '';
-	color: white;
-	opacity: 0.4;
-	text-align: center;
-	box-sizing: border-box;
-	pointer-events: none;
-	transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-}
-.top ul li:hover::before
-{
-	opacity: 0;
-	background-color: rgba(0,0,0,0.90);
-}
-.top ul li img
-{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-.lightbox
-{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background-color: rgba(0,0,0,0.75);
-	z-index: 999;
-	opacity: 0;
-	pointer-events: none;
-}
-.lightbox img
-{
-	max-width: 90%;
-	max-height: 80%;
-	position: relative;
-	top: -100%;
-	/* Transition */
-	transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-webkit-transition: all 1s ease;
-}
-.lightbox:target
-{
-	outline: none;
-	top: 0;
-	opacity: 1;
-	pointer-events: auto;
-	transition: all 1.2s ease;
-	-moz-transition: all 1.2s ease;
-	-ms-transition: all 1.2s ease;
-	-o-transition: all 1.2s ease;
-	-webkit-transition: all 1.2s ease;
-}
-.lightbox:target img
-{
-	top: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-}
+  span.cssbox_full {
+    z-index: 999999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+    transition: opacity 0.5s linear;
+  }
+  
+  span.cssbox_full img {
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    max-height: 90%;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px black;
+  }
+  
+  a.cssbox_close,
+  a.cssbox_prev,
+  a.cssbox_next {
+    z-index: 999999;
+    position: fixed;
+    text-decoration: none;
+    visibility: hidden;
+    color: white;
+    font-size: 36px;
+  }
+  
+  a.cssbox_close {
+    top: 1%;
+    right: 1%
+  }
+  
+  a.cssbox_close::after {
+    content: '\00d7';
+  }
+  
+  a.cssbox_prev,
+  a.cssbox_next {
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  
+  a.cssbox_prev {
+    left: 5%;
+  }
+  
+  a.cssbox_next {
+    right: 5%;
+  }
+  
+  a:target ~ a.cssbox_close,
+  a:target ~ a.cssbox_prev,
+  a:target ~ a.cssbox_next {
+    visibility: visible;
+  }
+  
+  a:target > img.cssbox_thumb + span.cssbox_full {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
+  }
 
 //
 
 .contact {
     padding-top: 300px;
-    width: 1620px;
+    width: 80%;
     height: 600px;
 
     h2 {
         font-weight: 800;
-        position: absolute;
-        left: 550px;
-        font-size: 120px;
+        position: relative;
+        left: 15%;
+        font-size: 40px;
         margin: 0;
+        text-align: center;
     }
     p {
+        font-size: 15px;
         position: relative;
-        left: 20px;
-        top: 120px;
+        left: 15%;
+        top: -20px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         text-align: center;
     }
+}
+
+@media only screen and (min-width: 1080px) {
+    .hero{
+        width: 80%;
+
+        h1{
+            font-size: 120px;
+        }
+    }
+
+    .mapstyle {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .about {
+        width: 80%;
+        padding-top: 300px;
+        padding-bottom: 0;
+
+        h2 {
+            font-size: 100px;
+        }
+
+        p {
+            height: 100%;
+            width: 100%;
+            font-size: 15px;
+            columns: 2;
+            line-height: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .contact {
+        padding-top: 400px;
+
+        h2 {
+            font-size: 100px;
+        }
+
+        p {
+            font-size: 20px;
+            top: -30px;
+        }
+    }
+
+    .container {
+        padding-top: 250px;   
+        padding-left: 1%;
+        padding-bottom: 0;
+        width: 100%;
+       }
+
+       .cssbox_thumb {
+        width: 35vw;
+        height: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    .hero{
+        width: 80%;
+
+        h1{
+            font-size: 120px;
+        }
+    }
+
+    .mapstyle {
+        width: 100%;
+    }
+
+    .about {
+        width: 80%;
+        padding-bottom: 0;
+
+        h2 {
+            font-size: 100px;
+        }
+
+        p {
+            height: 100%;
+            width: 100%;
+            font-size: 15px;
+            columns: 2;
+            line-height: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .contact {
+        h2 {
+            font-size: 100px;
+        }
+
+        p {
+            font-size: 20px;
+            top: -30px;
+        }
+    }
+
+    .container {
+        padding-top: 300px;   
+        padding-left: 1%;
+        padding-bottom: 100px;
+        width: 100%;
+       }
+
+       .cssbox_thumb {
+        width: 19vw;
+        height: auto;
+    }
+    
 }

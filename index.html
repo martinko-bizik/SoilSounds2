@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1920px, initial-scale=1.0">
     <title>Soil sounds 2</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css' rel='stylesheet' />
@@ -32,19 +32,48 @@
         </div>
     </div>
     <div class="container" id="gallery">
-        <div class="top">
-            <ul>
-                <li><a href="#img_1"><img src="./images/IMG_4301.jpg"></a></li>
-                <li><a href="#img_2"><img src="./images/IMG_4304.jpg"></a></li>
-                <li><a href="#img_3"><img src="./images/IMG_4316.jpg"></a></li>
-                <li><a href="#img_4"><img src="./images/IMG_4327.jpg"></a></li>
-            </ul>
-            <a href="#_1" class="lightbox trans" id="img_1"><img src="./images/IMG_4301.jpg"></a>
-            <a href="#_2" class="lightbox trans" id="img_2"><img src="./images/IMG_4304.jpg"></a>
-            <a href="#_3" class="lightbox trans" id="img_3"><img src="./images/IMG_4316.jpg"></a>
-            <a href="#_4" class="lightbox trans" id="img_4"><img src="./images/IMG_4327.jpg"></a>
-        </div>
+    <div class="cssbox">
+      <a id="image1" href="#image1">
+        <img class="cssbox_thumb" src='./images/IMG_4301-thumb.jpg'>
+        <span class="cssbox_full">
+          <img src="./images/IMG_4301.jpg">
+        </span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_next" href="#image2">&gt;</a>
     </div>
+    <div class="cssbox">
+      <a id="image2" href="#image2">
+        <img class="cssbox_thumb" src='./images/IMG_4304-thumb.jpg'>
+        <span class="cssbox_full">
+          <img src="./images/IMG_4304.jpg">
+        </span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_prev" href="#image1">&lt;</a>
+      <a class="cssbox_next" href="#image3">&gt;</a>
+    </div>
+    <div class="cssbox">
+      <a id="image3" href="#image3">
+        <img class="cssbox_thumb" src='./images/IMG_4316-thumb.jpg'>
+        <span class="cssbox_full">
+          <img src="./images/IMG_4316.jpg">
+        </span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_prev" href="#image2">&lt;</a>
+    </div>
+    <div class="cssbox">
+      <a id="image4" href="#image4">
+        <img class="cssbox_thumb" src='./images/IMG_4327-thumb.jpg'>
+        <span class="cssbox_full">
+          <img src="./images/IMG_4327.jpg">
+        </span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_prev" href="#image2">&lt;</a>
+    </div>
+  </div>
     <div class="contact" id="contact">
         <h2>Contact</h2>
         <p>martinkobizik@gmail.com<br>00421918730338</p>
