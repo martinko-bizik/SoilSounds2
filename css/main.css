@@ -82,7 +82,7 @@ body {
 }
 
 .mapboxgl-popup-content {
-  width: 560px;
+  width: 300px;
   text-align: left;
 }
 
@@ -152,11 +152,9 @@ body {
     padding-top: 300px;
     width: 1620px;
     height: 540px;
-
     .image {
         display: inline-block;
     }
-
 }
 **/
 .container {
