@@ -275,6 +275,19 @@ a:target > img.cssbox_thumb + span.cssbox_full {
   text-align: center;
 }
 
+.contact p a,
+.contact p a:link,
+.contact p a:visited,
+.contact p a:hover,
+.contact p a:active {
+  text-decoration: none;
+  color: #232323;
+}
+
+.contact p a:hover {
+  font-weight: 800;
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
     width: 80%;

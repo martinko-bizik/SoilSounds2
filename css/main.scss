@@ -270,6 +270,20 @@ body {
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         text-align: center;
+
+        a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active{
+    text-decoration: none;
+    color: #232323;
+    }
+
+    a:hover {
+        font-weight: 800;
+    }
+
     }
 }
 
